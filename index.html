@@ -234,7 +234,7 @@ legend{padding:0;margin-bottom:10px}
 .how{padding-block:clamp(70px,9vw,120px);border-top:1px solid var(--line)}
 .steps{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px);counter-reset:s}
 .steps li{display:grid;gap:12px;align-content:start;counter-increment:s}
-.steps li::before{content:counter(s);font-family:var(--display);font-size:3rem;line-height:1;color:var(--lamp)}
+.steps li::before{content:attr(data-n);font-family:var(--display);font-size:3rem;line-height:1;color:var(--lamp)}
 .steps h3{font-size:var(--step-1);font-family:var(--display)}
 .steps p{color:var(--paper-dim)}
 @media (max-width:760px){.steps{grid-template-columns:1fr}}
@@ -302,6 +302,23 @@ footer{border-top:1px solid var(--line);padding-block:36px 48px;color:var(--mute
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .toast{position:fixed;left:50%;width:max-content;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--paper);color:var(--night);padding:14px 20px;border-radius:10px;font-size:.9rem;max-width:min(92vw,420px);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:20;text-align:center}
 .toast.on{opacity:1;transform:translate(-50%,0)}
+/* ---------- checkout hand-off sheet ---------- */
+.sheet-bg{position:fixed;inset:0;z-index:30;background:rgba(8,6,5,.72);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:grid;place-items:end center;opacity:0;pointer-events:none;transition:opacity .3s}
+.sheet-bg.on{opacity:1;pointer-events:auto}
+.sheet{width:min(100%,520px);max-height:92vh;overflow:auto;background:#1b1612;border:1px solid var(--line);border-radius:18px 18px 0 0;padding:26px var(--gutter) calc(22px + env(safe-area-inset-bottom,0px));transform:translateY(30px);transition:transform .35s cubic-bezier(.2,.7,.1,1);display:grid;gap:16px}
+@media (min-width:700px){.sheet-bg{place-items:center}.sheet{border-radius:18px;padding:30px 32px}}
+.sheet-bg.on .sheet{transform:none}
+.sheet h3{font-size:var(--step-2)}
+.sheet .steps{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.sheet .steps li{display:grid;grid-template-columns:28px 1fr;gap:10px;color:var(--paper-dim);line-height:1.45}
+.sheet .steps li::before{content:attr(data-n);width:24px;height:24px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:.75rem;color:var(--paper)}
+.sheet .steps b{color:var(--paper);font-weight:500}
+.sheet pre{margin:0;white-space:pre-wrap;font:400 .88rem/1.55 var(--sans);background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:var(--paper);user-select:all;-webkit-user-select:all}
+.sheet .warn{color:#e7b48a;font-size:.92rem}
+.sheet .row{display:flex;flex-wrap:wrap;gap:10px}
+.sheet .row .btn{flex:1;justify-content:center}
+.sheet .x{position:absolute;right:14px;top:12px;background:none;border:0;color:var(--muted);font-size:1.6rem;cursor:pointer;line-height:1}
+.sheet{position:relative}
 /* ---------- sticky order bar (phones) ---------- */
 .sbar{display:none}
 @media (max-width:860px){
@@ -611,6 +628,19 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 </footer>
 <div class="sbar" id="sbar" aria-hidden="true"><span>Their name on the cover.<br>Your words inside.</span><a class="btn" href="#make" tabindex="-1">Make yours · NZ$150</a></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="sheet-bg" id="sheetBg" aria-hidden="true"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetH">
+  <button class="x" type="button" id="sheetX" aria-label="Close">&times;</button>
+  <span class="label" id="sheetLabel">Almost there</span>
+  <h3 id="sheetH">Here's what we'll print.</h3>
+  <pre id="sheetText"></pre>
+  <p class="warn" id="sheetWarn" hidden></p>
+  <ol class="steps" id="sheetSteps">
+    <li data-n="1"><span><b>Your details are copied.</b> Nothing to retype.</span></li>
+    <li data-n="2"><span>At checkout, find the box <b>"Your book details: paste them here"</b>.</span></li>
+    <li data-n="3"><span><b>Tap and hold</b> inside it, then tap <b>Paste</b>.</span></li>
+  </ol>
+  <div class="row"><button class="btn ghost" type="button" id="sheetCopy">Copy again</button><a class="btn" id="sheetGo" href="#" target="_blank" rel="noopener">Continue to checkout</a></div>
+</div></div>
 
 <script>
 /* ===== Shop links: paste each Payhip product link between the quotes. ===== */
@@ -964,15 +994,39 @@ document.querySelectorAll("[data-buy]").forEach(a=>{
   a.addEventListener("click", e=>{
     const url = link(); if(url && dyn) a.href = url;
     const book = kind==="hardcover"||kind==="pair";
-    if(book){
-      const txt=orderText();
-      const done=()=>say(url?"Your details are copied. Paste them into the box at checkout.":"Your details are copied. The shop opens very soon.");
-      try{ navigator.clipboard.writeText(txt).then(done,()=>{ showCopyBox(txt); say("Copy your details from the box below, then paste them at checkout."); }); }
-      catch(err){ showCopyBox(txt); }
-    }
+    if(book){ e.preventDefault(); openSheet(kind, url); return; }
     if(!url){ e.preventDefault(); if(!book) say("The shop opens very soon. Follow @the_unaskedquestions to hear first."); }
   });
 });
+/* checkout hand-off sheet */
+const sheetBg=document.getElementById("sheetBg"), sheetText=document.getElementById("sheetText"),
+  sheetWarn=document.getElementById("sheetWarn"), sheetGo=document.getElementById("sheetGo"),
+  sheetSteps=document.getElementById("sheetSteps"), sheetH=document.getElementById("sheetH");
+function copyTxt(t){ try{ return navigator.clipboard.writeText(t).then(()=>true,()=>false); }catch(e){ return Promise.resolve(false); } }
+function openSheet(kind,url){
+  const txt=orderText(); sheetText.textContent=txt;
+  const missing=[]; if(!S.name) missing.push("their name"); if(!fromEl.value.trim()) missing.push("your name");
+  sheetWarn.hidden=!missing.length;
+  sheetWarn.textContent=missing.length?`Add ${missing.join(" and ")} first, so we print it exactly right.`:"";
+  sheetH.textContent = kind==="pair" ? "Here's book one." : "Here's what we'll print.";
+  sheetSteps.querySelector("li:nth-child(2) span").innerHTML = kind==="pair"
+    ? 'At checkout, paste it into <b>"Book 1 details"</b>. For book two, type its name, word, colour and message into <b>"Book 2 details"</b>.'
+    : 'At checkout, find the box <b>"Your book details: paste them here"</b>.';
+  if(missing.length){ sheetGo.textContent="Add the missing details"; sheetGo.href="#make"; sheetGo.removeAttribute("target"); }
+  else if(url){ sheetGo.textContent="Continue to checkout"; sheetGo.href=url; sheetGo.target="_blank"; }
+  else { sheetGo.textContent="The shop opens very soon"; sheetGo.href="#"; sheetGo.removeAttribute("target"); }
+  copyTxt(txt).then(ok=>{ sheetSteps.querySelector("li:first-child span").innerHTML = ok
+    ? "<b>Your details are copied.</b> Nothing to retype."
+    : "<b>Press and hold the text above</b>, then tap <b>Copy</b>."; });
+  sheetBg.classList.add("on"); sheetBg.setAttribute("aria-hidden","false"); document.getElementById("sheetX").focus();
+}
+function closeSheet(){ sheetBg.classList.remove("on"); sheetBg.setAttribute("aria-hidden","true"); }
+document.getElementById("sheetX").addEventListener("click",closeSheet);
+sheetBg.addEventListener("click",e=>{ if(e.target===sheetBg) closeSheet(); });
+addEventListener("keydown",e=>{ if(e.key==="Escape") closeSheet(); });
+document.getElementById("sheetCopy").addEventListener("click",()=>copyTxt(sheetText.textContent).then(ok=>say(ok?"Copied again.":"Press and hold the text, then tap Copy.")));
+sheetGo.addEventListener("click",e=>{ if(sheetGo.getAttribute("href")==="#make"){ closeSheet(); } else if(sheetGo.getAttribute("href")==="#"){ e.preventDefault(); } });
+
 /* keep the draft on this device */
 (function(){ const KEY="tuq-draft";
   try{ const d=JSON.parse(localStorage.getItem(KEY)||"null");
