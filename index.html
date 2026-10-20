@@ -982,7 +982,7 @@ function say(msg){ toast.textContent = msg; toast.classList.add("on"); clearTime
 function orderText(){
   const nm=S.name || (S.role==="mother" ? "Margaret" : "David");
   const so=(signCustom.value.trim()||signOff), from=fromEl.value.trim();
-  return [`Book: Before You Were ${S.word}`,`For: ${S.name||"(add their name)"}`,`Cover colour: ${COL[S.colour].name}`,
+  return [`Before You Were ${S.word} (Keepsake hardcover)`,`For: ${S.name||"(add their name)"}`,`Cover colour: ${COL[S.colour].name}`,
     `Edition: from ${S.role==="mother"?"her":"his"} ${S.child}`,`Message: ${msgEl.value.trim()||"(no message)"}`,`Signed: ${so} ${from||"(add your name)"}`].join("\n");
 }
 function showCopyBox(txt){ const box=document.getElementById("copyBox"), ta=document.getElementById("copyText");
