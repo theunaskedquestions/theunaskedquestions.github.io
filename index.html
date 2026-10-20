@@ -121,8 +121,8 @@ p{margin:0}
 .story{position:relative;height:560vh;border-top:1px solid var(--line)}
 .story-stage{position:sticky;top:0;height:100vh;height:100svh;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:center;gap:24px;overflow:hidden}
 .story-book{position:relative;height:100%;display:grid;place-items:center;perspective:2200px}
-.open{--W:min(24vw,44vh);--H:calc(var(--W) * 1.5);position:relative;width:var(--W);height:var(--H);transform-style:preserve-3d;transition:transform .2s linear}
-.leaf{position:absolute;inset:0;transform-origin:left center;transform-style:preserve-3d;will-change:transform}
+.open{--W:min(24vw,44vh);--H:calc(var(--W) * 1.5);position:relative;width:var(--W);height:var(--H);transform-style:preserve-3d;will-change:transform}
+.leaf{position:absolute;inset:0;transform-origin:left center;transform-style:preserve-3d;will-change:transform;backface-visibility:hidden;-webkit-backface-visibility:hidden}
 .leaf .pf,.leaf .pb{position:absolute;inset:0;backface-visibility:hidden;background:#f1e9db center/cover no-repeat;background-blend-mode:multiply;box-shadow:0 0 0 1px rgba(0,0,0,.06)}
 .leaf .pb{transform:rotateY(180deg);background:#efe7da linear-gradient(90deg,rgba(0,0,0,.0) 80%,rgba(0,0,0,.10))}
 .leaf .pf::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.12),transparent 8%);pointer-events:none}
@@ -137,7 +137,7 @@ p{margin:0}
 .cap p{color:var(--paper-dim);max-width:34ch}
 .cap .q{font-family:var(--display);font-style:italic;font-size:var(--step-1);color:var(--paper);max-width:28ch}
 .story-progress{position:absolute;left:var(--gutter);bottom:28px;display:flex;gap:6px}
-.hint{position:absolute;left:50%;bottom:clamp(28px,7vh,72px);transform:translate(-50%,12px);display:flex;align-items:center;gap:12px;padding:11px 18px 11px 14px;border-radius:999px;background:rgba(15,12,10,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--line);color:var(--paper);font:500 .7rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;opacity:0;transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.1,1);pointer-events:none;z-index:4}
+.hint{position:absolute;left:50%;bottom:clamp(28px,7vh,72px);transform:translate(-50%,12px);display:flex;align-items:center;gap:12px;padding:11px 18px 11px 14px;border-radius:999px;background:rgba(15,12,10,.9);border:1px solid var(--line);color:var(--paper);font:500 .7rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;opacity:0;transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.1,1);pointer-events:none;z-index:4}
 .hint.on{opacity:1;transform:translate(-50%,0)}
 .hint .ico{width:16px;height:24px;border:1.5px solid var(--paper-dim);border-radius:9px;position:relative;flex:none}
 .hint .ico::after{content:"";position:absolute;left:50%;top:5px;width:3px;height:5px;margin-left:-1.5px;border-radius:2px;background:var(--paper);animation:hintdot 1.6s ease-in-out infinite}
@@ -323,7 +323,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .sbar{display:none}
 @media (max-width:860px){
   .sbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:15;align-items:center;justify-content:space-between;gap:14px;
-    padding:12px var(--gutter) calc(12px + env(safe-area-inset-bottom,0px));background:rgba(15,12,10,.86);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+    padding:12px var(--gutter) calc(12px + env(safe-area-inset-bottom,0px));background:rgba(15,12,10,.97);
     border-top:1px solid var(--line);transform:translateY(110%);transition:transform .45s cubic-bezier(.2,.7,.1,1)}
   .sbar.on{transform:none}
   .sbar span{font-family:var(--display);font-style:italic;font-size:1rem;color:var(--paper-dim);line-height:1.2}
@@ -725,6 +725,7 @@ let t0 = performance.now();
 function loop(now){
   const t = (now - t0)/1000;
   for(const b of books){
+    if(b.off) continue;
     const fy = (reduce || b.still) ? 0 : Math.sin(t*0.9 + b.phase)*4;
     const fx = (reduce || b.still) ? 0 : Math.cos(t*0.7 + b.phase)*1.5;
     b.rx += (b.tx + fx - b.rx) * 0.08;
@@ -812,6 +813,7 @@ let makeTouched = false;
 const S = {role:"mother", word:"Mum", name:"", colour:"saddle", child:"daughter"};
 const makeBookObj = makeBook(document.getElementById("makeBook"), {...S, name:"Margaret"});
 makeBookObj.baseY = -24; makeBookObj.ty = -24; makeBookObj.phase = 2; books.push(makeBookObj);
+if("IntersectionObserver" in window){ const vio = new IntersectionObserver(es=>es.forEach(e=>{ const b = books.find(x=>x.el===e.target); if(b) b.off = !e.isIntersecting; }),{rootMargin:"100px"}); books.forEach(b=>vio.observe(b.el)); }
 tiltOnPointer(document.getElementById("makeStage"), makeBookObj);
 dragToSpin(document.getElementById("makeStage"), makeBookObj);
 document.getElementById("turnBtn").addEventListener("click", ()=>{ makeBookObj.extra += 180; });
@@ -940,13 +942,25 @@ const storySec = document.getElementById("inside-story");
 let storyOn = true, lastCap = 0, hintSeen = false;
 const hintEl = document.getElementById("hint");
 if(matchMedia("(pointer: coarse)").matches) document.getElementById("hintText").textContent = "Swipe up to turn the pages";
+let fCur = 0, fTarget = 0, gliding = false;
 function onScroll(){
   if(!storyOn) return;
   const r = storySec.getBoundingClientRect();
   const total = storySec.offsetHeight - innerHeight;
   const p = Math.min(1, Math.max(0, -r.top / total));
-  const steps = PAGES.length;            /* number of flips */
-  const f = p * (steps + 0.6);           /* small hold at the end */
+  fTarget = p * (PAGES.length + 0.6);    /* small hold at the end */
+  if(fTarget > 1.6) hintSeen = true;
+  hintEl.classList.toggle("on", !hintSeen && r.top < innerHeight*0.25 && r.bottom > innerHeight && fTarget < 0.45);
+  if(!gliding){ gliding = true; requestAnimationFrame(glide); }
+}
+var f = 0;
+function glide(){
+  const d = fTarget - fCur;
+  fCur = reduce || Math.abs(d) < 0.002 ? fTarget : fCur + d * 0.16;
+  f = fCur; renderStory();
+  if(fCur !== fTarget) requestAnimationFrame(glide); else gliding = false;
+}
+function renderStory(){
   leaves.forEach((L,i)=>{
     const k = ease(Math.min(1, Math.max(0, f - i)));
     const lift = Math.sin(k*Math.PI) * 30;
@@ -957,13 +971,11 @@ function onScroll(){
   const tilt = 14 - 8*opened;
   openEl.style.transform = `translateX(${(opened*50).toFixed(2)}%) rotateX(${tilt.toFixed(2)}deg) rotateY(${(-14 + 14*opened).toFixed(2)}deg)`;
   openEl.style.setProperty("--uo", opened.toFixed(3));
-  if(f > 1.6) hintSeen = true;
-  hintEl.classList.toggle("on", !hintSeen && r.top < innerHeight*0.25 && r.bottom > innerHeight && f < 0.45);
   const ci = Math.min(CAPS.length-1, Math.floor(f + 0.35));
   if(ci !== lastCap){ capsEl.children[lastCap].classList.remove("on"); capsEl.children[ci].classList.add("on");
     sprog.children[lastCap].classList.remove("on"); sprog.children[ci].classList.add("on"); lastCap = ci; }
 }
-addEventListener("scroll", ()=>requestAnimationFrame(onScroll), {passive:true});
+addEventListener("scroll", onScroll, {passive:true});
 addEventListener("resize", onScroll);
 
 /* ===== STICKY ORDER BAR (phones) ===== */
