@@ -151,6 +151,10 @@ p{margin:0}
   .story-copy{min-height:11em;padding-inline:var(--gutter)}
   .cap{left:var(--gutter);right:var(--gutter)}
 }
+.vh-lock .story{height:calc(var(--lvh) * 560)}
+.vh-lock .story-stage{height:calc(var(--lvh) * 100)}
+.vh-lock .open{--W:min(24vw,calc(var(--lvh) * 44))}
+@media (max-width:860px){.vh-lock .open{--W:min(42vw,calc(var(--lvh) * 30))}}
 .no-story .story{height:auto}
 .no-story .story-stage{position:static;height:auto;grid-template-columns:1fr;padding-block:80px}
 .no-story .story-book{display:none}
@@ -644,6 +648,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 </div></div>
 
 <script>
+/* ===== Viewport lock: phone toolbars (and in-app browsers) resize the viewport mid-scroll, which made
+   vh-sized sections change height and the page jump. Lock 1vh in px; re-measure only on width change. ===== */
+let lockedH = innerHeight, lockedW = innerWidth;
+function lockVh(){ lockedH = innerHeight; lockedW = innerWidth; document.documentElement.style.setProperty("--lvh", (lockedH/100)+"px"); }
+lockVh(); document.documentElement.classList.add("vh-lock");
+addEventListener("resize", ()=>{ if(innerWidth !== lockedW || !matchMedia("(pointer: coarse)").matches) lockVh(); });
 /* ===== Shop links: paste each Payhip product link between the quotes. ===== */
 const LINKS = {
   hardcover: "https://payhip.com/b/K79fj",
@@ -947,7 +957,7 @@ let fCur = 0, fTarget = 0, gliding = false;
 function onScroll(){
   if(!storyOn) return;
   const r = storySec.getBoundingClientRect();
-  const total = storySec.offsetHeight - innerHeight;
+  const total = storySec.offsetHeight - lockedH;
   const p = Math.min(1, Math.max(0, -r.top / total));
   fTarget = p * (PAGES.length + 0.6);    /* small hold at the end */
   if(fTarget > 2.2) hintSeen = true;
