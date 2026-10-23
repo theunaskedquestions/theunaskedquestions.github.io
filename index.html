@@ -1039,7 +1039,7 @@ document.querySelectorAll("tr[data-by]").forEach(tr=>{
 });
 /* Limited-time offer: everything below switches itself on at start and off at end (NZ time).
    The Payhip coupon must exist with the same code, amount, products and expiry. Preview: add ?offer=preview */
-const OFFER={code:"FOUNDING",off:20,start:"2026-10-27T00:00:00+13:00",end:"2026-11-02T23:59:59+13:00",endText:"Mon 2 Nov, 11:59pm NZ time"};
+const OFFER={code:"FOUNDING",off:25,start:"2026-10-27T00:00:00+13:00",end:"2026-11-02T23:59:59+13:00",endText:"Mon 2 Nov, 11:59pm NZ time"};
 const OFFER_ON=(()=>{ const t=Date.now(); return /[?&]offer=preview/.test(location.search) || (t>=new Date(OFFER.start) && t<=new Date(OFFER.end)); })();
 if(OFFER_ON){
   const k=150-OFFER.off, p=270-OFFER.off;
