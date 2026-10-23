@@ -1039,12 +1039,12 @@ document.querySelectorAll("tr[data-by]").forEach(tr=>{
 });
 /* Limited-time offer: everything below switches itself on at start and off at end (NZ time).
    The Payhip coupon must exist with the same code, amount, products and expiry. Preview: add ?offer=preview */
-const OFFER={code:"FOUNDING",off:25,start:"2026-10-27T00:00:00+13:00",end:"2026-11-02T23:59:59+13:00",endText:"Mon 2 Nov, 11:59pm NZ time"};
+const OFFER={code:"FOUNDING",pairCode:"FOUNDINGPAIR",off:25,start:"2026-10-27T00:00:00+13:00",end:"2026-11-02T23:59:59+13:00",endText:"Mon 2 Nov, 11:59pm NZ time"};
 const OFFER_ON=(()=>{ const t=Date.now(); return /[?&]offer=preview/.test(location.search) || (t>=new Date(OFFER.start) && t<=new Date(OFFER.end)); })();
 if(OFFER_ON){
   const k=150-OFFER.off, p=270-OFFER.off;
   const rib=document.getElementById("ribbon");
-  rib.innerHTML=`Founding Week · NZ$${OFFER.off} off with code <b>${OFFER.code}</b> · ends ${OFFER.endText}`; rib.hidden=false;
+  rib.innerHTML=`Founding Week · NZ$${OFFER.off} off · code <b>${OFFER.code}</b>, or <b>${OFFER.pairCode}</b> for the Pair · ends ${OFFER.endText}`; rib.hidden=false;
   const placeBar=()=>{ const b=document.querySelector(".bar"); b.style.top=rib.offsetHeight+"px"; b.style.paddingTop="0"; };
   placeBar(); addEventListener("resize",placeBar);
   document.querySelectorAll("[data-offer-hero]").forEach(el=>el.innerHTML=`<s>NZ$150</s> NZ$${k} with code ${OFFER.code} this week, personalised, with free Priority shipping`);
@@ -1055,10 +1055,9 @@ if(OFFER_ON){
   if(pa) pa.innerHTML=`<s>NZ$270</s>NZ$${p}`;
   const head=document.querySelector(".price-head");
   if(head){ const n=document.createElement("p"); n.className="offer-note";
-    n.innerHTML=`<b>Founding Week.</b> Enter <b>${OFFER.code}</b> at checkout for NZ$${OFFER.off} off the Keepsake Edition or the Pair, for the first thirty orders, until ${OFFER.endText}.`;
+    n.innerHTML=`<b>Founding Week.</b> NZ$${OFFER.off} off until ${OFFER.endText}: enter <b>${OFFER.code}</b> at checkout for the Keepsake Edition, or <b>${OFFER.pairCode}</b> for the Keepsake Pair. For the first thirty orders.`;
     head.appendChild(n); }
-  const sc=document.getElementById("sheetCode");
-  sc.querySelector("span").innerHTML=`Enter code <b>${OFFER.code}</b> at checkout for NZ$${OFFER.off} off.`; sc.hidden=false;
+  document.getElementById("sheetCode").hidden=false;
 }
 /* checkout hand-off sheet */
 const sheetBg=document.getElementById("sheetBg"), sheetText=document.getElementById("sheetText"),
@@ -1074,6 +1073,7 @@ function openSheet(kind,url){
   xm.textContent=PASSED.length?`For ${PASSED.join(", ").replace(/, ([^,]*)$/," and $1")}, the Christmas date has passed: your book arrives in the New Year, with a card to give on Christmas Day.`:"";
   sheetWarn.textContent=missing.length?`Add ${missing.join(" and ")} first, so we print it exactly right.`:"";
   sheetH.textContent = kind==="pair" ? "Here's book one." : "Here's what we'll print.";
+  if(OFFER_ON) document.querySelector("#sheetCode span").innerHTML=`Enter code <b>${kind==="pair"?OFFER.pairCode:OFFER.code}</b> at checkout for NZ$${OFFER.off} off.`;
   sheetSteps.querySelector("li:nth-child(2) span").innerHTML = kind==="pair"
     ? 'At checkout, paste it into <b>"Book 1 details"</b>. For book two, type its name, word, colour and message into <b>"Book 2 details"</b>.'
     : 'At checkout, find the box <b>"Your book details: paste them here"</b>.';
