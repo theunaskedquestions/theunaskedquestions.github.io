@@ -346,6 +346,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .hero-cta small s{font-size:1em}
 .offer-note{margin-top:1.1em;color:var(--paper);font-size:.95rem;text-wrap:balance}
 .offer-note b{color:var(--lamp);font-weight:500}
+#offerClock{font-variant-numeric:tabular-nums;white-space:nowrap}
 .sheet .steps li[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -1038,27 +1039,50 @@ document.querySelectorAll("tr[data-by]").forEach(tr=>{
   if(Date.now()>end){ tr.style.opacity=".55"; tr.cells[1].textContent="Arrives in the New Year"; PASSED.push(tr.cells[0].textContent); }
 });
 /* Limited-time offer: everything below switches itself on at start and off at end (NZ time).
-   The Payhip coupon must exist with the same code, amount, products and expiry. Preview: add ?offer=preview */
+   The Payhip coupon must exist with the same code, amount, products and expiry. Preview: add ?offer=preview
+   Time comes from the server's Date header (corrected for the visitor's clock), so a wrong phone clock can't extend it. */
 const OFFER={code:"FOUNDING",pairCode:"FOUNDINGPAIR",off:25,start:"2026-10-27T00:00:00+13:00",end:"2026-11-02T23:59:59+13:00",endText:"Mon 2 Nov, 11:59pm NZ time"};
-const OFFER_ON=(()=>{ const t=Date.now(); return /[?&]offer=preview/.test(location.search) || (t>=new Date(OFFER.start) && t<=new Date(OFFER.end)); })();
-if(OFFER_ON){
+const OFFER_PREVIEW=/[?&]offer=preview/.test(location.search), OFFER_END=Date.parse(OFFER.end)+1000;
+let OFFER_ON=false, offerSkew=0;
+const offerSaved=[], rib=document.getElementById("ribbon");
+const placeBar=()=>{ const b=document.querySelector(".bar"); b.style.top=OFFER_ON?rib.offsetHeight+"px":""; b.style.paddingTop=OFFER_ON?"0":""; };
+addEventListener("resize",placeBar);
+function offerSet(el,html){ if(!el) return; offerSaved.push([el,el.innerHTML]); el.innerHTML=html; }
+function offerOn(){
+  if(OFFER_ON) return; OFFER_ON=true;
   const k=150-OFFER.off, p=270-OFFER.off;
-  const rib=document.getElementById("ribbon");
-  rib.innerHTML=`Founding Week · NZ$${OFFER.off} off · code <b>${OFFER.code}</b>, or <b>${OFFER.pairCode}</b> for the Pair · ends ${OFFER.endText}`; rib.hidden=false;
-  const placeBar=()=>{ const b=document.querySelector(".bar"); b.style.top=rib.offsetHeight+"px"; b.style.paddingTop="0"; };
-  placeBar(); addEventListener("resize",placeBar);
-  document.querySelectorAll("[data-offer-hero]").forEach(el=>el.innerHTML=`<s>NZ$150</s> NZ$${k} with code ${OFFER.code} this week, personalised, with free Priority shipping`);
-  document.querySelectorAll("[data-offer-num]").forEach(el=>el.textContent=`NZ$${k}`);
-  document.querySelectorAll("[data-offer-price]").forEach(el=>el.textContent=`Make yours · NZ$${k}`);
-  const ka=document.querySelector('[data-offer-amt="keepsake"]'), pa=document.querySelector('[data-offer-amt="pair"]');
-  if(ka) ka.innerHTML=`<s>NZ$150</s>NZ$${k}`;
-  if(pa) pa.innerHTML=`<s>NZ$270</s>NZ$${p}`;
+  rib.innerHTML=`Founding Week · NZ$${OFFER.off} off · code <b>${OFFER.code}</b>, or <b>${OFFER.pairCode}</b> for the Pair · <span id="offerClock">ends ${OFFER.endText}</span>`; rib.hidden=false;
+  document.querySelectorAll("[data-offer-hero]").forEach(el=>offerSet(el,`<s>NZ$150</s> NZ$${k} with code ${OFFER.code} this week, personalised, with free Priority shipping`));
+  document.querySelectorAll("[data-offer-num]").forEach(el=>offerSet(el,`NZ$${k}`));
+  document.querySelectorAll("[data-offer-price]").forEach(el=>offerSet(el,`Make yours · NZ$${k}`));
+  offerSet(document.querySelector('[data-offer-amt="keepsake"]'),`<s>NZ$150</s>NZ$${k}`);
+  offerSet(document.querySelector('[data-offer-amt="pair"]'),`<s>NZ$270</s>NZ$${p}`);
   const head=document.querySelector(".price-head");
-  if(head){ const n=document.createElement("p"); n.className="offer-note";
+  if(head){ const n=document.createElement("p"); n.className="offer-note"; n.id="offerNote";
     n.innerHTML=`<b>Founding Week.</b> NZ$${OFFER.off} off until ${OFFER.endText}: enter <b>${OFFER.code}</b> at checkout for the Keepsake Edition, or <b>${OFFER.pairCode}</b> for the Keepsake Pair. For the first thirty orders.`;
     head.appendChild(n); }
   document.getElementById("sheetCode").hidden=false;
+  placeBar();
 }
+function offerOff(){
+  if(!OFFER_ON) return; OFFER_ON=false;
+  offerSaved.splice(0).forEach(([el,html])=>el.innerHTML=html);
+  rib.hidden=true; document.getElementById("offerNote")?.remove(); document.getElementById("sheetCode").hidden=true;
+  placeBar();
+}
+function offerTick(){
+  const t=Date.now()+offerSkew;
+  if(OFFER_PREVIEW || (t>=Date.parse(OFFER.start) && t<OFFER_END)) offerOn(); else offerOff();
+  const clock=OFFER_ON && document.getElementById("offerClock"); if(!clock) return;
+  const r=Math.max(0,Math.floor((OFFER_END-t)/1000)), d=Math.floor(r/86400), pad=n=>String(n).padStart(2,"0");
+  clock.textContent=`ends in ${d?d+"d ":""}${pad(Math.floor(r%86400/3600))}h ${pad(Math.floor(r%3600/60))}m ${pad(r%60)}s`;
+  placeBar();
+}
+offerTick(); setInterval(offerTick,1000);
+(async()=>{ try{
+  const t0=Date.now(), res=await fetch(location.pathname+"?now="+t0,{method:"HEAD",cache:"no-store"}), t1=Date.now();
+  const server=Date.parse(res.headers.get("Date")); if(!isNaN(server)){ offerSkew=server+(t1-t0)/2-t1; offerTick(); }
+}catch(e){} })();
 /* checkout hand-off sheet */
 const sheetBg=document.getElementById("sheetBg"), sheetText=document.getElementById("sheetText"),
   sheetWarn=document.getElementById("sheetWarn"), sheetGo=document.getElementById("sheetGo"),
