@@ -1041,7 +1041,7 @@ document.querySelectorAll("tr[data-by]").forEach(tr=>{
 /* Limited-time offer: everything below switches itself on at start and off at end (NZ time).
    The Payhip coupon must exist with the same code, amount, products and expiry. Preview: add ?offer=preview
    Time comes from the server's Date header (corrected for the visitor's clock), so a wrong phone clock can't extend it. */
-const OFFER={code:"FOUNDING",pairCode:"FOUNDINGPAIR",off:25,start:"2026-10-27T00:00:00+13:00",end:"2026-11-02T23:59:59+13:00",endText:"Mon 2 Nov, 11:59pm NZ time"};
+const OFFER={code:"FOUNDING",pairCode:"FOUNDINGPAIR",off:25,start:"2026-10-27T00:00:00+13:00",end:"2026-11-05T23:59:59+13:00",endText:"Thu 5 Nov, 11:59pm NZ time"};
 const OFFER_PREVIEW=/[?&]offer=preview/.test(location.search), OFFER_END=Date.parse(OFFER.end)+1000;
 let OFFER_ON=false, offerSkew=0;
 const offerSaved=[], rib=document.getElementById("ribbon");
