@@ -5,12 +5,12 @@
   "post": "M1",
   "audience": "Mum",
   "files": [
-   "TUQ_C01_M1_recipe_s1.jpg",
+   "TUQ_C01_M1_recipe_s1v2.jpg",
    "TUQ_C01_M1_recipe_s2.jpg",
    "TUQ_C01_M1_recipe_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C01_M1_recipe_s1.jpg",
+   "TUQ_C01_M1_recipe_s1v2.jpg",
    "TUQ_C01_M1_recipe_s2.jpg",
    "TUQ_C01_M1_recipe_s3_tt.jpg"
   ],
@@ -18,18 +18,19 @@
   "tiktok_caption": "Some things only live in her hands.\nBefore You Were Mum is a 92-page personalised hardcover she fills in at her own pace, including a page for the recipe and the bit nobody writes down.\nSee the pages inside.\nFounding Week: NZ$25 off with code FOUNDING until Mon 2 Nov, 11:59pm NZ time, for the first thirty orders.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsformum #mumgift #familyrecipes #personalisedgifts",
   "tiktok_title": "There's a recipe she makes without measuring. Nobody has written down the bit she does…",
   "ai_label": true,
-  "ai_note": "Slide 2 is an AI-generated hands image: set isAiGenerated / isAigc true",
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C01_M1_recipe_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C01_M1_recipe_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C01_M1_recipe_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C01_M1_recipe_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C01_M1_recipe_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C01_M1_recipe_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C01_M1_recipe_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C01_M1_recipe_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-10-29",
@@ -37,12 +38,12 @@
   "post": "D1",
   "audience": "Dad",
   "files": [
-   "TUQ_C02_D1_advice_s1.jpg",
+   "TUQ_C02_D1_advice_s1v2.jpg",
    "TUQ_C02_D1_advice_s2.jpg",
    "TUQ_C02_D1_advice_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C02_D1_advice_s1.jpg",
+   "TUQ_C02_D1_advice_s1v2.jpg",
    "TUQ_C02_D1_advice_s2.jpg",
    "TUQ_C02_D1_advice_s3_tt.jpg"
   ],
@@ -50,18 +51,19 @@
   "tiktok_caption": "Advice sounds different when you know where it came from.\nBefore You Were Dad is a personalised hardcover of 100+ questions. He answers them in his own words, then gives it back.\nSee inside.\nFounding Week: NZ$25 off with code FOUNDING until Mon 2 Nov, 11:59pm NZ time, for the first thirty orders.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsfordad #dadgift #fathersandsons #personalisedgifts",
   "tiktok_title": "He's given you the same advice for years. You've never asked what taught him it.",
   "ai_label": true,
-  "ai_note": "Slide 2 is an AI-generated hands image: set isAiGenerated / isAigc true",
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C02_D1_advice_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C02_D1_advice_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C02_D1_advice_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C02_D1_advice_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C02_D1_advice_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C02_D1_advice_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C02_D1_advice_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C02_D1_advice_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-10-30",
@@ -69,31 +71,32 @@
   "post": "M2",
   "audience": "Mum",
   "files": [
-   "TUQ_C03_M2_takeaway_s1.jpg",
+   "TUQ_C03_M2_takeaway_s1v2.jpg",
    "TUQ_C03_M2_takeaway_s2.jpg",
    "TUQ_C03_M2_takeaway_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C03_M2_takeaway_s1.jpg",
+   "TUQ_C03_M2_takeaway_s1v2.jpg",
    "TUQ_C03_M2_takeaway_s2.jpg",
    "TUQ_C03_M2_takeaway_s3_tt.jpg"
   ],
   "ig_caption": "The small stuff you know. The big stuff you might not.\nA personalised hardcover she fills in with her own answers, from her first job to her takeaway order.\nHave a look inside.\nFounding Week: NZ$25 off with code FOUNDING until Mon 2 Nov, 11:59pm NZ time, for the first thirty orders.\nLink in bio.\n\n#giftsformum #mumgift #christmasgiftideas #nzgifts",
   "tiktok_caption": "The small stuff you know. The big stuff you might not.\nA personalised hardcover she fills in with her own answers, from her first job to her takeaway order.\nHave a look inside.\nFounding Week: NZ$25 off with code FOUNDING until Mon 2 Nov, 11:59pm NZ time, for the first thirty orders.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsformum #mumgift #christmasgiftideas #nzgifts",
   "tiktok_title": "You know her takeaway order by heart. You might not know what she wanted to be when…",
-  "ai_label": false,
-  "ai_note": "No AI imagery",
+  "ai_label": true,
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C03_M2_takeaway_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C03_M2_takeaway_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C03_M2_takeaway_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C03_M2_takeaway_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C03_M2_takeaway_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C03_M2_takeaway_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C03_M2_takeaway_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C03_M2_takeaway_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-10-31",
@@ -101,31 +104,32 @@
   "post": "P1",
   "audience": "Pair",
   "files": [
-   "TUQ_C04_P1_two-stories_s1.jpg",
-   "TUQ_C04_P1_two-stories_s2.jpg",
+   "TUQ_C04_P1_two-stories_s1v2.jpg",
+   "TUQ_C04_P1_two-stories_s2v2.jpg",
    "TUQ_C04_P1_two-stories_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C04_P1_two-stories_s1.jpg",
-   "TUQ_C04_P1_two-stories_s2.jpg",
+   "TUQ_C04_P1_two-stories_s1v2.jpg",
+   "TUQ_C04_P1_two-stories_s2v2.jpg",
    "TUQ_C04_P1_two-stories_s3_tt.jpg"
   ],
   "ig_caption": "Two people. Two stories you've never heard in full.\nThe Mum + Dad pair is two personalised hardcovers. Each parent fills in their own.\nSee inside.\nFounding Week: NZ$25 off the Mum + Dad pair with code FOUNDINGPAIR until Mon 2 Nov, 11:59pm NZ time.\nLink in bio.\n\n#giftsforparents #christmasgiftideas #personalisedgifts #nzgifts",
   "tiktok_caption": "Two people. Two stories you've never heard in full.\nThe Mum + Dad pair is two personalised hardcovers. Each parent fills in their own.\nSee inside.\nFounding Week: NZ$25 off the Mum + Dad pair with code FOUNDINGPAIR until Mon 2 Nov, 11:59pm NZ time.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsforparents #christmasgiftideas #personalisedgifts #nzgifts",
   "tiktok_title": "You know them as Mum and Dad. They each had a whole life before that was their name.",
   "ai_label": true,
-  "ai_note": "Slide 2 is an AI-generated hands image: set isAiGenerated / isAigc true",
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C04_P1_two-stories_s1.jpg",
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C04_P1_two-stories_s2.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C04_P1_two-stories_s1v2.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C04_P1_two-stories_s2v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C04_P1_two-stories_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C04_P1_two-stories_s1.jpg",
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C04_P1_two-stories_s2.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C04_P1_two-stories_s1v2.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C04_P1_two-stories_s2v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C04_P1_two-stories_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo and slide 2 with pair-wrapping photo"
  },
  {
   "date": "2026-11-01",
@@ -133,31 +137,32 @@
   "post": "X1",
   "audience": "Both",
   "files": [
-   "TUQ_C05_X1_how-it-works_s1.jpg",
+   "TUQ_C05_X1_how-it-works_s1v2.jpg",
    "TUQ_C05_X1_how-it-works_s2.jpg",
    "TUQ_C05_X1_how-it-works_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C05_X1_how-it-works_s1.jpg",
+   "TUQ_C05_X1_how-it-works_s1v2.jpg",
    "TUQ_C05_X1_how-it-works_s2.jpg",
    "TUQ_C05_X1_how-it-works_s3_tt.jpg"
   ],
   "ig_caption": "A gift that comes back to you.\nThis week NZ$125 with code FOUNDING, or NZ$245 for the pair with FOUNDINGPAIR. Personalisation and Priority shipping included. Ends Mon 2 Nov, 11:59pm NZ time.\nLink in bio.\n\n#giftsformum #giftsfordad #personalisedgifts #christmasgiftideas",
   "tiktok_caption": "A gift that comes back to you.\nThis week NZ$125 with code FOUNDING, or NZ$245 for the pair with FOUNDINGPAIR. Personalisation and Priority shipping included. Ends Mon 2 Nov, 11:59pm NZ time.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsformum #giftsfordad #personalisedgifts #christmasgiftideas",
   "tiktok_title": "What actually happens when you give someone this book.",
-  "ai_label": false,
-  "ai_note": "No AI imagery",
+  "ai_label": true,
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C05_X1_how-it-works_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C05_X1_how-it-works_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C05_X1_how-it-works_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C05_X1_how-it-works_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C05_X1_how-it-works_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C05_X1_how-it-works_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C05_X1_how-it-works_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C05_X1_how-it-works_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-11-02",
@@ -165,12 +170,12 @@
   "post": "D2",
   "audience": "Dad",
   "files": [
-   "TUQ_C06_D2_mullet_s1.jpg",
+   "TUQ_C06_D2_mullet_s1v2.jpg",
    "TUQ_C06_D2_mullet_s2.jpg",
    "TUQ_C06_D2_mullet_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C06_D2_mullet_s1.jpg",
+   "TUQ_C06_D2_mullet_s1v2.jpg",
    "TUQ_C06_D2_mullet_s2.jpg",
    "TUQ_C06_D2_mullet_s3_tt.jpg"
   ],
@@ -178,18 +183,19 @@
   "tiktok_caption": "He was a teenager once. With opinions.\nBefore You Were Dad is a personalised hardcover he fills in, from the haircut years to now, then gives back to you.\nSee inside.\nFounding Week ends tonight at 11:59pm NZ time: NZ$25 off with code FOUNDING, or FOUNDINGPAIR for the pair.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsfordad #dadgift #funnygiftsfordad #christmasgiftideas",
   "tiktok_title": "Before he was the sensible one, he was a teenager with a mullet decision to make.",
   "ai_label": true,
-  "ai_note": "Slide 2 is an AI-generated hands image: set isAiGenerated / isAigc true",
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C06_D2_mullet_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C06_D2_mullet_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C06_D2_mullet_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C06_D2_mullet_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C06_D2_mullet_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C06_D2_mullet_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C06_D2_mullet_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C06_D2_mullet_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-11-03",
@@ -197,12 +203,12 @@
   "post": "M3",
   "audience": "Mum",
   "files": [
-   "TUQ_C07_M3_sixteen_s1.jpg",
+   "TUQ_C07_M3_sixteen_s1v2.jpg",
    "TUQ_C07_M3_sixteen_s2.jpg",
    "TUQ_C07_M3_sixteen_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C07_M3_sixteen_s1.jpg",
+   "TUQ_C07_M3_sixteen_s1v2.jpg",
    "TUQ_C07_M3_sixteen_s2.jpg",
    "TUQ_C07_M3_sixteen_s3_tt.jpg"
   ],
@@ -210,18 +216,19 @@
   "tiktok_caption": "She had a whole life before she was the one in charge.\nA personalised hardcover she fills in with the stories she's never been asked for. She answers what she wants.\nSee inside.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsformum #mumgift #christmasgiftideas #personalisedgifts",
   "tiktok_title": "Before she was the one holding everything together, she was sixteen and getting away…",
   "ai_label": true,
-  "ai_note": "Slide 2 is an AI-generated hands image: set isAiGenerated / isAigc true",
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C07_M3_sixteen_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C07_M3_sixteen_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C07_M3_sixteen_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C07_M3_sixteen_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C07_M3_sixteen_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C07_M3_sixteen_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C07_M3_sixteen_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C07_M3_sixteen_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-11-04",
@@ -229,31 +236,32 @@
   "post": "D3",
   "audience": "Dad",
   "files": [
-   "TUQ_C08_D3_kitchen-table_s1.jpg",
+   "TUQ_C08_D3_kitchen-table_s1v2.jpg",
    "TUQ_C08_D3_kitchen-table_s2.jpg",
    "TUQ_C08_D3_kitchen-table_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C08_D3_kitchen-table_s1.jpg",
+   "TUQ_C08_D3_kitchen-table_s1v2.jpg",
    "TUQ_C08_D3_kitchen-table_s2.jpg",
    "TUQ_C08_D3_kitchen-table_s3_tt.jpg"
   ],
   "ig_caption": "He could probably draw it from memory.\nBefore You Were Dad has pages to write, lists to fill and a map to draw. He fills it in, then gives it back.\nSee inside.\nLink in bio.\n\n#giftsfordad #dadgift #familystories #christmasgiftideas",
   "tiktok_caption": "He could probably draw it from memory.\nBefore You Were Dad has pages to write, lists to fill and a map to draw. He fills it in, then gives it back.\nSee inside.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsfordad #dadgift #familystories #christmasgiftideas",
   "tiktok_title": "You know his chair at the table. Do you know where everyone sat at the table he grew…",
-  "ai_label": false,
-  "ai_note": "No AI imagery",
+  "ai_label": true,
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C08_D3_kitchen-table_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C08_D3_kitchen-table_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C08_D3_kitchen-table_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C08_D3_kitchen-table_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C08_D3_kitchen-table_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C08_D3_kitchen-table_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C08_D3_kitchen-table_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C08_D3_kitchen-table_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-11-05",
@@ -261,12 +269,12 @@
   "post": "M4",
   "audience": "Mum",
   "files": [
-   "TUQ_C09_M4_older-now_s1.jpg",
+   "TUQ_C09_M4_older-now_s1v2.jpg",
    "TUQ_C09_M4_older-now_s2.jpg",
    "TUQ_C09_M4_older-now_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C09_M4_older-now_s1.jpg",
+   "TUQ_C09_M4_older-now_s1v2.jpg",
    "TUQ_C09_M4_older-now_s2.jpg",
    "TUQ_C09_M4_older-now_s3_tt.jpg"
   ],
@@ -274,18 +282,19 @@
   "tiktok_caption": "You're older now. You could ask.\nBefore You Were Mum is a personalised hardcover of 100+ questions. She fills it in at her own pace, then gives it back.\nSee inside.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsformum #mumgift #mumandme #personalisedgifts",
   "tiktok_title": "'You'll understand when you're older.' You're older now. You could ask her what she meant.",
   "ai_label": true,
-  "ai_note": "Slide 2 is an AI-generated hands image: set isAiGenerated / isAigc true",
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C09_M4_older-now_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C09_M4_older-now_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C09_M4_older-now_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C09_M4_older-now_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C09_M4_older-now_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C09_M4_older-now_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C09_M4_older-now_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C09_M4_older-now_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-11-06",
@@ -293,31 +302,32 @@
   "post": "X2",
   "audience": "Mum",
   "files": [
-   "TUQ_C10_X2_free-printable_s1.jpg",
+   "TUQ_C10_X2_free-printable_s1v2.jpg",
    "TUQ_C10_X2_free-printable_s2.jpg",
    "TUQ_C10_X2_free-printable_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C10_X2_free-printable_s1.jpg",
+   "TUQ_C10_X2_free-printable_s1v2.jpg",
    "TUQ_C10_X2_free-printable_s2.jpg",
    "TUQ_C10_X2_free-printable_s3_tt.jpg"
   ],
   "ig_caption": "Ask one over dinner. Write down what she says.\nOur free 10 Questions printable comes from the book. If she loves it, the full hardcover has 100+.\nLink in bio.\n\n#giftsformum #giftsfordad #personalisedgifts #christmasgiftideas",
   "tiktok_caption": "Ask one over dinner. Write down what she says.\nOur free 10 Questions printable comes from the book. If she loves it, the full hardcover has 100+.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsformum #giftsfordad #personalisedgifts #christmasgiftideas",
   "tiktok_title": "Not ready for a whole book? Start with ten questions over dinner.",
-  "ai_label": false,
-  "ai_note": "No AI imagery",
+  "ai_label": true,
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C10_X2_free-printable_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C10_X2_free-printable_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C10_X2_free-printable_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C10_X2_free-printable_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C10_X2_free-printable_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C10_X2_free-printable_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C10_X2_free-printable_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C10_X2_free-printable_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-11-07",
@@ -325,31 +335,32 @@
   "post": "D4",
   "audience": "Dad",
   "files": [
-   "TUQ_C11_D4_first-crush_s1.jpg",
+   "TUQ_C11_D4_first-crush_s1v2.jpg",
    "TUQ_C11_D4_first-crush_s2.jpg",
    "TUQ_C11_D4_first-crush_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C11_D4_first-crush_s1.jpg",
+   "TUQ_C11_D4_first-crush_s1v2.jpg",
    "TUQ_C11_D4_first-crush_s2.jpg",
    "TUQ_C11_D4_first-crush_s3_tt.jpg"
   ],
   "ig_caption": "He might go red. He might tell you.\nBefore You Were Dad is a personalised hardcover he fills in with the stories he's never been asked about. Every question is optional.\nSee inside.\nLink in bio.\n\n#giftsfordad #dadgift #christmasgiftideas #personalisedgifts",
   "tiktok_caption": "He might go red. He might tell you.\nBefore You Were Dad is a personalised hardcover he fills in with the stories he's never been asked about. Every question is optional.\nSee inside.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsfordad #dadgift #christmasgiftideas #personalisedgifts",
   "tiktok_title": "Your dad was somebody's first crush once. He's probably never told you who his was.",
-  "ai_label": false,
-  "ai_note": "No AI imagery",
+  "ai_label": true,
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C11_D4_first-crush_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C11_D4_first-crush_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C11_D4_first-crush_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C11_D4_first-crush_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C11_D4_first-crush_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C11_D4_first-crush_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C11_D4_first-crush_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C11_D4_first-crush_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-11-08",
@@ -357,31 +368,32 @@
   "post": "M5",
   "audience": "Mum (any title)",
   "files": [
-   "TUQ_C12_M5_whatever-you-call-her_s1.jpg",
+   "TUQ_C12_M5_whatever-you-call-her_s1v2.jpg",
    "TUQ_C12_M5_whatever-you-call-her_s2.jpg",
    "TUQ_C12_M5_whatever-you-call-her_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C12_M5_whatever-you-call-her_s1.jpg",
+   "TUQ_C12_M5_whatever-you-call-her_s1v2.jpg",
    "TUQ_C12_M5_whatever-you-call-her_s2.jpg",
    "TUQ_C12_M5_whatever-you-call-her_s3_tt.jpg"
   ],
   "ig_caption": "Whatever you call her, she had a name first.\nBefore You Were Mum comes with the title you use (Mum, Mom, Mama, Mam or your own word) and her name on the cover. She fills it in, then gives it back.\nLink in bio.\n\n#giftsformum #giftsformom #mamagift #personalisedgifts",
   "tiktok_caption": "Whatever you call her, she had a name first.\nBefore You Were Mum comes with the title you use (Mum, Mom, Mama, Mam or your own word) and her name on the cover. She fills it in, then gives it back.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsformum #giftsformom #mamagift #personalisedgifts",
   "tiktok_title": "She had a name long before anyone called her Mum.",
-  "ai_label": false,
-  "ai_note": "No AI imagery",
+  "ai_label": true,
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C12_M5_whatever-you-call-her_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C12_M5_whatever-you-call-her_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C12_M5_whatever-you-call-her_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C12_M5_whatever-you-call-her_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C12_M5_whatever-you-call-her_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C12_M5_whatever-you-call-her_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C12_M5_whatever-you-call-her_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C12_M5_whatever-you-call-her_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-11-09",
@@ -389,31 +401,32 @@
   "post": "D5",
   "audience": "Dad",
   "files": [
-   "TUQ_C13_D5_money_s1.jpg",
+   "TUQ_C13_D5_money_s1v2.jpg",
    "TUQ_C13_D5_money_s2.jpg",
    "TUQ_C13_D5_money_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C13_D5_money_s1.jpg",
+   "TUQ_C13_D5_money_s1v2.jpg",
    "TUQ_C13_D5_money_s2.jpg",
    "TUQ_C13_D5_money_s3_tt.jpg"
   ],
   "ig_caption": "Every money rule he has started somewhere.\nBefore You Were Dad is a personalised hardcover of 100+ questions, from his first pay to what he'd tell you now. He fills it in and gives it back.\nLink in bio.\n\n#giftsfordad #dadgift #fatherhood #christmasgiftideas",
   "tiktok_caption": "Every money rule he has started somewhere.\nBefore You Were Dad is a personalised hardcover of 100+ questions, from his first pay to what he'd tell you now. He fills it in and gives it back.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsfordad #dadgift #fatherhood #christmasgiftideas",
   "tiktok_title": "He's said money doesn't grow on trees your whole life. There's a story behind that.",
-  "ai_label": false,
-  "ai_note": "No AI imagery",
+  "ai_label": true,
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C13_D5_money_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C13_D5_money_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C13_D5_money_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C13_D5_money_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C13_D5_money_s1.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C13_D5_money_s1v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C13_D5_money_s2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C13_D5_money_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo"
  },
  {
   "date": "2026-11-10",
@@ -421,30 +434,31 @@
   "post": "P2",
   "audience": "Pair",
   "files": [
-   "TUQ_C14_P2_your-turn_s1.jpg",
-   "TUQ_C14_P2_your-turn_s2.jpg",
+   "TUQ_C14_P2_your-turn_s1v2.jpg",
+   "TUQ_C14_P2_your-turn_s2v2.jpg",
    "TUQ_C14_P2_your-turn_s3.jpg"
   ],
   "files_tiktok": [
-   "TUQ_C14_P2_your-turn_s1.jpg",
-   "TUQ_C14_P2_your-turn_s2.jpg",
+   "TUQ_C14_P2_your-turn_s1v2.jpg",
+   "TUQ_C14_P2_your-turn_s2v2.jpg",
    "TUQ_C14_P2_your-turn_s3_tt.jpg"
   ],
   "ig_caption": "The last chapter flips it.\nEach personalised hardcover ends with their questions for you. They fill it in, then hand it back for your answers.\nSee inside.\nLink in bio.\n\n#giftsforparents #christmasgiftideas #familystories #personalisedgifts",
   "tiktok_caption": "The last chapter flips it.\nEach personalised hardcover ends with their questions for you. They fill it in, then hand it back for your answers.\nSee inside.\nOrder via our Instagram @the_unaskedquestions (link in bio). theunaskedquestions.github.io #giftsforparents #christmasgiftideas #familystories #personalisedgifts",
   "tiktok_title": "It's a book of questions for your parents. The last chapter has questions for you.",
-  "ai_label": false,
-  "ai_note": "No AI imagery",
+  "ai_label": true,
+  "ai_note": "Slide 1 is an AI-generated photo (Runway): AI label on",
   "replaces": "That day's 12:00 IG post and one repeated TikTok video (scheduling thread's pick)",
   "urls_instagram": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C14_P2_your-turn_s1.jpg",
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C14_P2_your-turn_s2.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C14_P2_your-turn_s1v2.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C14_P2_your-turn_s2v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C14_P2_your-turn_s3.jpg"
   ],
   "urls_tiktok": [
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C14_P2_your-turn_s1.jpg",
-   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C14_P2_your-turn_s2.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C14_P2_your-turn_s1v2.jpg",
+   "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C14_P2_your-turn_s2v2.jpg",
    "https://raw.githubusercontent.com/theunaskedquestions/theunaskedquestions.github.io/claude/project-thread-sb5gw8/carousels/TUQ_C14_P2_your-turn_s3_tt.jpg"
-  ]
+  ],
+  "v2": "Slide 1 replaced with Runway photo and slide 2 with pair-wrapping photo"
  }
 ]
